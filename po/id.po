@@ -1,0 +1,458 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Willy Sudiarto Raharjo <willysr@slackware-id.org>, 2014,2016
+msgid ""
+msgstr ""
+"Project-Id-Version: GDE2 Desktop Environment\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-14 14:07+0300\n"
+"PO-Revision-Date: 2016-03-28 16:04+0000\n"
+"Last-Translator: Willy Sudiarto Raharjo <willysr@slackware-id.org>\n"
+"Language-Team: Indonesian (http://www.transifex.com/gde2/GDE2/language/id/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: id\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../data/gde2-volume-control.desktop.in.in.h:1
+msgid "Sound"
+msgstr "Suara"
+
+#: ../data/gde2-volume-control.desktop.in.in.h:2
+msgid "Change sound volume and sound events"
+msgstr "Ubah volume suara dan peristiwa suara"
+
+#: ../data/gde2-volume-control-applet.desktop.in.h:1
+#: ../gde2-volume-control/dialog-main.c:245
+#: ../gde2-volume-control/gvc-channel-bar.c:500
+#: ../gde2-volume-control/gvc-speaker-test.c:461
+msgid "Volume Control"
+msgstr "Pengatur Volume"
+
+#: ../data/gde2-volume-control-applet.desktop.in.h:2
+msgid "Show desktop volume control"
+msgstr "Tampilkan kendali volume desktop"
+
+#. Translators: This is the name of an audio file that sounds like the bark of
+#. a dog.
+#. You might want to translate it into the equivalent words of your language.
+#: ../data/sounds/gde2-sounds-default.xml.in.in.h:3
+msgid "Bark"
+msgstr "Gonggong"
+
+#. Translators: This is the name of an audio file that sounds like a water
+#. drip.
+#. You might want to translate it into the equivalent words of your language.
+#: ../data/sounds/gde2-sounds-default.xml.in.in.h:6
+msgid "Drip"
+msgstr "Tetesan Air"
+
+#. Translators: This is the name of an audio file that sounds like tapping
+#. glass.
+#. You might want to translate it into the equivalent words of your language.
+#: ../data/sounds/gde2-sounds-default.xml.in.in.h:9
+msgid "Glass"
+msgstr "Gelas"
+
+#. Translators: This is the name of an audio file that sounds sort of like a
+#. submarine sonar ping.
+#. You might want to translate it into the equivalent words of your language.
+#: ../data/sounds/gde2-sounds-default.xml.in.in.h:12
+msgid "Sonar"
+msgstr "Sonar"
+
+#: ../gde2-volume-control/applet-main.c:45
+#: ../gde2-volume-control/dialog-main.c:187
+msgid "Version of this application"
+msgstr "Versi dari aplikasi ini"
+
+#: ../gde2-volume-control/applet-main.c:46
+#: ../gde2-volume-control/dialog-main.c:185
+msgid "Enable debug"
+msgstr "Aktifkan mode debug"
+
+#: ../gde2-volume-control/applet-main.c:55
+msgid " — GDE2 Volume Control Applet"
+msgstr " — Aplet Kendali Volume GDE2"
+
+#: ../gde2-volume-control/dialog-main.c:138
+msgid "Sound system is not available"
+msgstr "Sistem suara tidak tersedia"
+
+#: ../gde2-volume-control/dialog-main.c:160
+msgid "Waiting for sound system to respond"
+msgstr "Menunggu sistem suara merespon"
+
+#: ../gde2-volume-control/dialog-main.c:184
+msgid "Sound system backend"
+msgstr "Sistem suara backend"
+
+#: ../gde2-volume-control/dialog-main.c:186
+msgid "Startup page"
+msgstr "Halaman awalan"
+
+#: ../gde2-volume-control/dialog-main.c:196
+msgid " — GDE2 Volume Control"
+msgstr " - Kendali Volume GDE2"
+
+#: ../gde2-volume-control/gvc-applet.c:322
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2028
+msgid "Input"
+msgstr "Masukan"
+
+#: ../gde2-volume-control/gvc-applet.c:323
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2130
+msgid "Output"
+msgstr "Keluaran"
+
+#: ../gde2-volume-control/gvc-applet.c:326
+msgid "Microphone Volume"
+msgstr "Volume Mikrofon"
+
+#: ../gde2-volume-control/gvc-applet.c:328
+msgid "Sound Output Volume"
+msgstr "Volume Keluaran Suara"
+
+#: ../gde2-volume-control/gvc-applet.c:333
+msgid "GDE2 Volume Control Applet"
+msgstr "Applet Kontrol Volume GDE2"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:158
+msgctxt "balance"
+msgid "Left"
+msgstr "Kiri"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:159
+msgctxt "balance"
+msgid "Right"
+msgstr "Kanan"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:162
+msgctxt "balance"
+msgid "Rear"
+msgstr "Belakang"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:163
+msgctxt "balance"
+msgid "Front"
+msgstr "Depan"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:166
+msgctxt "balance"
+msgid "Minimum"
+msgstr "Minimum"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:167
+msgctxt "balance"
+msgid "Maximum"
+msgstr "Maksimum"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:355
+msgid "_Balance:"
+msgstr "_Balance:"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:358
+msgid "_Fade:"
+msgstr "_Fade:"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:361
+msgid "_Subwoofer:"
+msgstr "_Subwoofer:"
+
+#: ../gde2-volume-control/gvc-channel-bar.c:330
+msgctxt "volume"
+msgid "Unamplified"
+msgstr "Tak diperkuat"
+
+#: ../gde2-volume-control/gvc-channel-bar.c:343
+msgctxt "volume"
+msgid "100%"
+msgstr "100%"
+
+#. Mute button
+#: ../gde2-volume-control/gvc-channel-bar.c:1099
+msgid "Mute"
+msgstr "Bisu"
+
+#: ../gde2-volume-control/gvc-combo-box.c:257
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1617
+msgid "_Profile:"
+msgstr "_Profil:"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:355
+#: ../gde2-volume-control/gvc-mixer-dialog.c:504
+msgid "Co_nnector:"
+msgstr "Ko_nektor:"
+
+#. translators:
+#. * The device has been disabled
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1126
+msgid "Disabled"
+msgstr "Dimatikan"
+
+#. translators:
+#. * The number of sound outputs on a particular device
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1132
+#, c-format
+msgid "%u Output"
+msgid_plural "%u Outputs"
+msgstr[0] "%u Keluaran"
+
+#. translators:
+#. * The number of sound inputs on a particular device
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1141
+#, c-format
+msgid "%u Input"
+msgid_plural "%u Inputs"
+msgstr[0] "%u Masukan"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1508
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1777
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:872
+msgid "Name"
+msgstr "Nama"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1556
+#, c-format
+msgid "Speaker Testing for %s"
+msgstr "Pengujian Speaker bagi %s"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1620
+msgid "Test Speakers"
+msgstr "Uji Speaker"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1829
+msgid "Sound Effects"
+msgstr "Efek Suara"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1852
+msgid "_Alert volume: "
+msgstr "Volume peringat_an:"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1927
+msgid "_Output volume: "
+msgstr "V_olume keluaran:"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1974
+msgid "Hardware"
+msgstr "Perangkat keras"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1979
+msgid "C_hoose a device to configure:"
+msgstr "Pili_h perangkat untuk ditata:"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2006
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2162
+msgid "Settings for the selected device:"
+msgstr "Tatanan bagi perangkat yang dipilih:"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2036
+msgid "_Input volume: "
+msgstr "Volume _masukan:"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2070
+msgid "Input level:"
+msgstr "Aras masukan:"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2099
+msgid "C_hoose a device for sound input:"
+msgstr "Pili_h perangkat bagi masukan suara:"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2135
+msgid "C_hoose a device for sound output:"
+msgstr "Pili_h perangkat bagi keluaran suara:"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2196
+msgid "Applications"
+msgstr "Aplikasi"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2201
+msgid "No application is currently playing or recording audio."
+msgstr "Tak ada aplikasi yang kini memainkan atau merekam suara."
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2388
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:736
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:748
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:760
+msgid "Sound Preferences"
+msgstr "Preferensi Suara"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:324
+msgid "No sounds"
+msgstr "Tanpa suara"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:445
+msgid "Built-in"
+msgstr "Bawaan"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:632
+#: ../gde2-volume-control/sound-theme-file-utils.c:292
+msgid "Custom"
+msgstr "Bebas"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:739
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:750
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:762
+msgid "Testing event sound"
+msgstr "Menguji suara peristiwa"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:848
+msgid "Default"
+msgstr "Bawaan"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:849
+msgid "From theme"
+msgstr "Dari tema"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:879
+msgid "Type"
+msgstr "Jenis"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:1064
+msgid "Sound _theme:"
+msgstr "_Tema suara:"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:1077
+msgid "C_hoose an alert sound:"
+msgstr "Pili_h suara waspada:"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:1109
+msgid "Enable _window and button sounds"
+msgstr "Aktifkan suara _jendela dan tombol"
+
+#: ../gde2-volume-control/gvc-speaker-test.c:262
+msgid "Stop"
+msgstr "Stop"
+
+#: ../gde2-volume-control/gvc-speaker-test.c:262
+#: ../gde2-volume-control/gvc-speaker-test.c:380
+msgid "Test"
+msgstr "Tes"
+
+#: ../gde2-volume-control/gvc-stream-status-icon.c:232
+#, c-format
+msgid "Failed to start Sound Preferences: %s"
+msgstr "Gagal memulai Preferensi Suara: %s"
+
+#: ../gde2-volume-control/gvc-stream-status-icon.c:267
+msgid "_Mute"
+msgstr "_Bisu"
+
+#: ../gde2-volume-control/gvc-stream-status-icon.c:278
+#: ../gde2-volume-control/gvc-stream-status-icon.c:280
+msgid "_Sound Preferences"
+msgstr "Preferensi _Suara"
+
+#: ../gde2-volume-control/gvc-stream-status-icon.c:475
+msgid "Muted"
+msgstr "Dibisukan"
+
+#: ../gde2-volume-control/gvc-utils.c:59
+msgid "Unknown"
+msgstr "Tidak diketahui"
+
+#. Speaker channel names
+#: ../gde2-volume-control/gvc-utils.c:61
+#: ../gde2-volume-control/gvc-utils.c:109
+msgid "Mono"
+msgstr "Mono"
+
+#: ../gde2-volume-control/gvc-utils.c:62
+msgid "Front Left"
+msgstr "Kiri Depan"
+
+#: ../gde2-volume-control/gvc-utils.c:63
+msgid "Front Right"
+msgstr "Tengah Depan"
+
+#: ../gde2-volume-control/gvc-utils.c:64
+msgid "Front Center"
+msgstr "Tengah Depan"
+
+#: ../gde2-volume-control/gvc-utils.c:65
+msgid "LFE"
+msgstr "LFE"
+
+#: ../gde2-volume-control/gvc-utils.c:66
+msgid "Rear Left"
+msgstr "Belakang Kiri"
+
+#: ../gde2-volume-control/gvc-utils.c:67
+msgid "Rear Right"
+msgstr "Belakang Kanan"
+
+#: ../gde2-volume-control/gvc-utils.c:68
+msgid "Rear Center"
+msgstr "Belakang Tengah"
+
+#: ../gde2-volume-control/gvc-utils.c:69
+msgid "Front Left of Center"
+msgstr "Kiri atau Tengah Depan"
+
+#: ../gde2-volume-control/gvc-utils.c:70
+msgid "Front Right of Center"
+msgstr "Kanan atau Tengah Depan"
+
+#: ../gde2-volume-control/gvc-utils.c:71
+msgid "Side Left"
+msgstr "Sisi Kiri"
+
+#: ../gde2-volume-control/gvc-utils.c:72
+msgid "Side Right"
+msgstr "Sisi Kanan"
+
+#: ../gde2-volume-control/gvc-utils.c:73
+msgid "Top Front Left"
+msgstr "Depan Atas Kiri"
+
+#: ../gde2-volume-control/gvc-utils.c:74
+msgid "Top Front Right"
+msgstr "Depan Atas Kanan"
+
+#: ../gde2-volume-control/gvc-utils.c:75
+msgid "Top Front Center"
+msgstr "Depat Atas Tengah"
+
+#: ../gde2-volume-control/gvc-utils.c:76
+msgid "Top Center"
+msgstr "Atas Tengah"
+
+#: ../gde2-volume-control/gvc-utils.c:77
+msgid "Top Rear Left"
+msgstr "Belakang Atas Kiri"
+
+#: ../gde2-volume-control/gvc-utils.c:78
+msgid "Top Rear Right"
+msgstr "Belakang Atas Kanan"
+
+#: ../gde2-volume-control/gvc-utils.c:79
+msgid "Top Rear Center"
+msgstr "Belakang Atas Tengah"
+
+#: ../gde2-volume-control/gvc-utils.c:114
+msgid "Stereo"
+msgstr "Stereo"
+
+#: ../gde2-volume-control/gvc-utils.c:121
+msgid "Surround 4.0"
+msgstr "Surround 4.0"
+
+#: ../gde2-volume-control/gvc-utils.c:129
+msgid "Surround 4.1"
+msgstr "Surround 4.1"
+
+#: ../gde2-volume-control/gvc-utils.c:131
+msgid "Surround 5.0"
+msgstr "Surround 5.0"
+
+#: ../gde2-volume-control/gvc-utils.c:141
+msgid "Surround 5.1"
+msgstr "Surround 5.1"
+
+#: ../gde2-volume-control/gvc-utils.c:152
+msgid "Surround 7.1"
+msgstr "Surround 7.1"

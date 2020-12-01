@@ -1,0 +1,7 @@
+[main]
+host = https://www.transifex.com
+ 
+[GDE2.gde2-media]
+file_filter = po/<lang>.po
+source_file = po/gde2-media.pot
+source_lang = en

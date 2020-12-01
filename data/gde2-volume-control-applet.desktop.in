@@ -1,0 +1,17 @@
+[Desktop Entry]
+_Name=Volume Control
+_Comment=Show desktop volume control
+Icon=multimedia-volume-control
+Exec=gde2-volume-control-applet
+Terminal=false
+Type=Application
+Categories=AudioVideo;Mixer;Settings;HardwareSettings;
+Keywords=GDE2;volume;control;mixer;settings;sound;
+NoDisplay=true
+OnlyShowIn=GDE2;
+X-GDE2-Bugzilla-Bugzilla=GDE2
+X-GDE2-Bugzilla-Product=gde2-media
+X-GDE2-Bugzilla-Component=gde2-volume-control
+# See http://bugzilla.gde2.org/show_bug.cgi?id=568320
+#X-GDE2-Autostart-Phase=Panel
+X-GDE2-Autostart-Notify=true

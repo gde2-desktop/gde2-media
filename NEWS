@@ -1,0 +1,71 @@
+==============
+Version 1.16.0
+==============
+
+- Translations update
+
+==============
+Version 1.14.1
+==============
+
+- GTK+3: add css name gvc-level-bar for 3.20
+- Translations update
+- Make distcheck use currently selected GTK+ version
+
+==============
+Version 1.14.0
+==============
+
+- GTK+3: add css name GvcMixerDialog for 3.20
+- GTK+3: fix several deprecations
+- Translations update
+- Fix Changelog generation
+
+==============
+Version 1.12.1
+==============
+
+- GTK+3: don't remove slider background (fixes background in some
+  themes)
+
+==============
+Version 1.12.0
+==============
+
+- Multiple fixes in manpages
+- GTK+3: add style classes for slider and menu for volume-applet
+- GTK+3: fix missing icons with custom icon theme
+- Translations update
+
+==============
+Version 1.10.0
+==============
+
+- Removed PulseAudio dependency
+- Removed gst-mixer and gst-mixer-applet
+- gde2-volume-control: Port from PulseAudio to libgde2mixer
+- gde2-volume-control: Allow selecting input and output connectors
+- gde2-volume-control: Speaker test widget now contains a Close button
+- gde2-volume-control: Device and stream lists are now sorted
+- gde2-volume-control-applet: Do not show icons when on a vertical panel
+- gde2-volume-control-applet: Allow clicking in the popup window
+
+=============
+Version 1.8.0
+=============
+
+- Middle click on applet toggles mute state
+- gde2-volume-control: Allow applications list to be scrolled
+
+=============
+Version 1.5.1
+=============
+
+- Add GStreamer mixer applet (from gde2-applets package)
+
+=============
+Version 1.5.0
+=============
+
+- Migration to GSettings
+- Removed gstreamer-properties and profiles (unused)

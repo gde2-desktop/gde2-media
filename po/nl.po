@@ -1,0 +1,468 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Dennis Smit <synap@area101.penguin.nl>, 2002
+# Huib Kleinhout <huib@stack.nl>, 2002
+# infirit <inactive+infirit@transifex.com>, 2014-2015
+# Mario Blättermann <mariobl@gnome.org>, 2010
+# Reinout van Schouwen <reinouts@gnome.org>, 2009
+# Stef Pletinck <stef.plet@gmail.com>, 2015
+# Taco Witte <T.C.Witte@phys.uu.nl>, 2002
+# Tino Meinen <a.t.meinen@chello.nl>, 2002, 2007, 2008
+# Wing Tung Leung <tg@skynet.be>, 1999
+msgid ""
+msgstr ""
+"Project-Id-Version: GDE2 Desktop Environment\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-14 14:07+0300\n"
+"PO-Revision-Date: 2016-01-18 09:04+0000\n"
+"Last-Translator: Stef Pletinck <stef.plet@gmail.com>\n"
+"Language-Team: Dutch (http://www.transifex.com/gde2/GDE2/language/nl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/gde2-volume-control.desktop.in.in.h:1
+msgid "Sound"
+msgstr "Geluid"
+
+#: ../data/gde2-volume-control.desktop.in.in.h:2
+msgid "Change sound volume and sound events"
+msgstr "Geluidsvolume en systeemgeluiden aanpassen"
+
+#: ../data/gde2-volume-control-applet.desktop.in.h:1
+#: ../gde2-volume-control/dialog-main.c:245
+#: ../gde2-volume-control/gvc-channel-bar.c:500
+#: ../gde2-volume-control/gvc-speaker-test.c:461
+msgid "Volume Control"
+msgstr "Volumeregeling"
+
+#: ../data/gde2-volume-control-applet.desktop.in.h:2
+msgid "Show desktop volume control"
+msgstr "Volumeregeling tonen"
+
+#. Translators: This is the name of an audio file that sounds like the bark of
+#. a dog.
+#. You might want to translate it into the equivalent words of your language.
+#: ../data/sounds/gde2-sounds-default.xml.in.in.h:3
+msgid "Bark"
+msgstr "Woef"
+
+#. Translators: This is the name of an audio file that sounds like a water
+#. drip.
+#. You might want to translate it into the equivalent words of your language.
+#: ../data/sounds/gde2-sounds-default.xml.in.in.h:6
+msgid "Drip"
+msgstr "Drup"
+
+#. Translators: This is the name of an audio file that sounds like tapping
+#. glass.
+#. You might want to translate it into the equivalent words of your language.
+#: ../data/sounds/gde2-sounds-default.xml.in.in.h:9
+msgid "Glass"
+msgstr "Glas"
+
+#. Translators: This is the name of an audio file that sounds sort of like a
+#. submarine sonar ping.
+#. You might want to translate it into the equivalent words of your language.
+#: ../data/sounds/gde2-sounds-default.xml.in.in.h:12
+msgid "Sonar"
+msgstr "Sonar"
+
+#: ../gde2-volume-control/applet-main.c:45
+#: ../gde2-volume-control/dialog-main.c:187
+msgid "Version of this application"
+msgstr "Versie van deze toepassing"
+
+#: ../gde2-volume-control/applet-main.c:46
+#: ../gde2-volume-control/dialog-main.c:185
+msgid "Enable debug"
+msgstr "Debug inschakelen"
+
+#: ../gde2-volume-control/applet-main.c:55
+msgid " — GDE2 Volume Control Applet"
+msgstr " — Gde2 Volumeregeling-applet"
+
+#: ../gde2-volume-control/dialog-main.c:138
+msgid "Sound system is not available"
+msgstr "Geluid systeem niet beschikbaar"
+
+#: ../gde2-volume-control/dialog-main.c:160
+msgid "Waiting for sound system to respond"
+msgstr "Wachten op antwoord van het geluidsysteem"
+
+#: ../gde2-volume-control/dialog-main.c:184
+msgid "Sound system backend"
+msgstr "Geluid systeem backend"
+
+#: ../gde2-volume-control/dialog-main.c:186
+msgid "Startup page"
+msgstr "Startup-pagina"
+
+#: ../gde2-volume-control/dialog-main.c:196
+msgid " — GDE2 Volume Control"
+msgstr " — Gde2 Volumeregeling"
+
+#: ../gde2-volume-control/gvc-applet.c:322
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2028
+msgid "Input"
+msgstr "Invoer"
+
+#: ../gde2-volume-control/gvc-applet.c:323
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2130
+msgid "Output"
+msgstr "Uitvoer"
+
+#: ../gde2-volume-control/gvc-applet.c:326
+msgid "Microphone Volume"
+msgstr "Microfoonvolume"
+
+#: ../gde2-volume-control/gvc-applet.c:328
+msgid "Sound Output Volume"
+msgstr "Uitvoervolume"
+
+#: ../gde2-volume-control/gvc-applet.c:333
+msgid "GDE2 Volume Control Applet"
+msgstr "Gde2 Volumeregeling Applet"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:158
+msgctxt "balance"
+msgid "Left"
+msgstr "Links"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:159
+msgctxt "balance"
+msgid "Right"
+msgstr "Rechts"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:162
+msgctxt "balance"
+msgid "Rear"
+msgstr "Achter"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:163
+msgctxt "balance"
+msgid "Front"
+msgstr "Voor"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:166
+msgctxt "balance"
+msgid "Minimum"
+msgstr "Minimum"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:167
+msgctxt "balance"
+msgid "Maximum"
+msgstr "Maximum"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:355
+msgid "_Balance:"
+msgstr "_Balans:"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:358
+msgid "_Fade:"
+msgstr "_Fade:"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:361
+msgid "_Subwoofer:"
+msgstr "_Subwoofer:"
+
+#: ../gde2-volume-control/gvc-channel-bar.c:330
+msgctxt "volume"
+msgid "Unamplified"
+msgstr "Onversterkt"
+
+#: ../gde2-volume-control/gvc-channel-bar.c:343
+msgctxt "volume"
+msgid "100%"
+msgstr "100%"
+
+#. Mute button
+#: ../gde2-volume-control/gvc-channel-bar.c:1099
+msgid "Mute"
+msgstr "Dempen"
+
+#: ../gde2-volume-control/gvc-combo-box.c:257
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1617
+msgid "_Profile:"
+msgstr "_Profiel:"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:355
+#: ../gde2-volume-control/gvc-mixer-dialog.c:504
+msgid "Co_nnector:"
+msgstr "Co_nnector:"
+
+#. translators:
+#. * The device has been disabled
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1126
+msgid "Disabled"
+msgstr "Uigeschakeld"
+
+#. translators:
+#. * The number of sound outputs on a particular device
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1132
+#, c-format
+msgid "%u Output"
+msgid_plural "%u Outputs"
+msgstr[0] "%u uitgang"
+msgstr[1] "%u uitgangen"
+
+#. translators:
+#. * The number of sound inputs on a particular device
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1141
+#, c-format
+msgid "%u Input"
+msgid_plural "%u Inputs"
+msgstr[0] "%u ingang"
+msgstr[1] "%u ingangen"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1508
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1777
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:872
+msgid "Name"
+msgstr "Naam"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1556
+#, c-format
+msgid "Speaker Testing for %s"
+msgstr "Luidsprekertest voor %s"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1620
+msgid "Test Speakers"
+msgstr "Luidsprekers testen"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1829
+msgid "Sound Effects"
+msgstr "Geluidseffecten"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1852
+msgid "_Alert volume: "
+msgstr "_Waarschuwingsvolume: "
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1927
+msgid "_Output volume: "
+msgstr "_Uitvoervolume: "
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1974
+msgid "Hardware"
+msgstr "Hardware"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1979
+msgid "C_hoose a device to configure:"
+msgstr "Kies een apparaat om te _configureren"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2006
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2162
+msgid "Settings for the selected device:"
+msgstr "Instellingen voor het geselecteerde apparaat"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2036
+msgid "_Input volume: "
+msgstr "_Invoervolume: "
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2070
+msgid "Input level:"
+msgstr "Invoerniveau:"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2099
+msgid "C_hoose a device for sound input:"
+msgstr "Kies een apparaat voor geluids_invoer"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2135
+msgid "C_hoose a device for sound output:"
+msgstr "Kies een _apparaat voor geluidsuitvoer"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2196
+msgid "Applications"
+msgstr "Toepassingen"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2201
+msgid "No application is currently playing or recording audio."
+msgstr "Er is momenteel geen toepassing geluid aan het opnemen of afspelen."
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2388
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:736
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:748
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:760
+msgid "Sound Preferences"
+msgstr "Geluidsvoorkeuren"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:324
+msgid "No sounds"
+msgstr "Geen geluiden"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:445
+msgid "Built-in"
+msgstr "Ingebouwd"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:632
+#: ../gde2-volume-control/sound-theme-file-utils.c:292
+msgid "Custom"
+msgstr "Aangepast"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:739
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:750
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:762
+msgid "Testing event sound"
+msgstr "Geluid testen"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:848
+msgid "Default"
+msgstr "Standaard"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:849
+msgid "From theme"
+msgstr "Van thema"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:879
+msgid "Type"
+msgstr "Type"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:1064
+msgid "Sound _theme:"
+msgstr "Geluids_thema:"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:1077
+msgid "C_hoose an alert sound:"
+msgstr "Kies een _waarschuwingsgeluid:"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:1109
+msgid "Enable _window and button sounds"
+msgstr "Scherm- en knop_geluiden inschakelen"
+
+#: ../gde2-volume-control/gvc-speaker-test.c:262
+msgid "Stop"
+msgstr "Stoppen"
+
+#: ../gde2-volume-control/gvc-speaker-test.c:262
+#: ../gde2-volume-control/gvc-speaker-test.c:380
+msgid "Test"
+msgstr "Test"
+
+#: ../gde2-volume-control/gvc-stream-status-icon.c:232
+#, c-format
+msgid "Failed to start Sound Preferences: %s"
+msgstr "Kon volumeregelingsvoorkeuren niet starten: %s"
+
+#: ../gde2-volume-control/gvc-stream-status-icon.c:267
+msgid "_Mute"
+msgstr "_Dempen"
+
+#: ../gde2-volume-control/gvc-stream-status-icon.c:278
+#: ../gde2-volume-control/gvc-stream-status-icon.c:280
+msgid "_Sound Preferences"
+msgstr "_Geluidsvoorkeuren"
+
+#: ../gde2-volume-control/gvc-stream-status-icon.c:475
+msgid "Muted"
+msgstr "Gedempt"
+
+#: ../gde2-volume-control/gvc-utils.c:59
+msgid "Unknown"
+msgstr "Onbekend"
+
+#. Speaker channel names
+#: ../gde2-volume-control/gvc-utils.c:61
+#: ../gde2-volume-control/gvc-utils.c:109
+msgid "Mono"
+msgstr "Mono"
+
+#: ../gde2-volume-control/gvc-utils.c:62
+msgid "Front Left"
+msgstr "Linksvoor"
+
+#: ../gde2-volume-control/gvc-utils.c:63
+msgid "Front Right"
+msgstr "Rechtsvoor"
+
+#: ../gde2-volume-control/gvc-utils.c:64
+msgid "Front Center"
+msgstr "Middenvoor"
+
+#: ../gde2-volume-control/gvc-utils.c:65
+msgid "LFE"
+msgstr "LFE"
+
+#: ../gde2-volume-control/gvc-utils.c:66
+msgid "Rear Left"
+msgstr "Linksachter"
+
+#: ../gde2-volume-control/gvc-utils.c:67
+msgid "Rear Right"
+msgstr "Rechtsachter"
+
+#: ../gde2-volume-control/gvc-utils.c:68
+msgid "Rear Center"
+msgstr "Midden achteraan"
+
+#: ../gde2-volume-control/gvc-utils.c:69
+msgid "Front Left of Center"
+msgstr "Linksvoor van Midden"
+
+#: ../gde2-volume-control/gvc-utils.c:70
+msgid "Front Right of Center"
+msgstr "Rechtsvoor van Midden"
+
+#: ../gde2-volume-control/gvc-utils.c:71
+msgid "Side Left"
+msgstr "Linker zijkant"
+
+#: ../gde2-volume-control/gvc-utils.c:72
+msgid "Side Right"
+msgstr "Rechter zijkant"
+
+#: ../gde2-volume-control/gvc-utils.c:73
+msgid "Top Front Left"
+msgstr "Linksboven vooraan"
+
+#: ../gde2-volume-control/gvc-utils.c:74
+msgid "Top Front Right"
+msgstr "Rechtsboven vooraan"
+
+#: ../gde2-volume-control/gvc-utils.c:75
+msgid "Top Front Center"
+msgstr "Middenboven vooraan"
+
+#: ../gde2-volume-control/gvc-utils.c:76
+msgid "Top Center"
+msgstr "Midden boven"
+
+#: ../gde2-volume-control/gvc-utils.c:77
+msgid "Top Rear Left"
+msgstr "Linksboven achter"
+
+#: ../gde2-volume-control/gvc-utils.c:78
+msgid "Top Rear Right"
+msgstr "Rechtsboven achter"
+
+#: ../gde2-volume-control/gvc-utils.c:79
+msgid "Top Rear Center"
+msgstr "Middenboven achteraan"
+
+#: ../gde2-volume-control/gvc-utils.c:114
+msgid "Stereo"
+msgstr "Stereo"
+
+#: ../gde2-volume-control/gvc-utils.c:121
+msgid "Surround 4.0"
+msgstr "Surround 4.0"
+
+#: ../gde2-volume-control/gvc-utils.c:129
+msgid "Surround 4.1"
+msgstr "Surround 4.1"
+
+#: ../gde2-volume-control/gvc-utils.c:131
+msgid "Surround 5.0"
+msgstr "Surround 5.0"
+
+#: ../gde2-volume-control/gvc-utils.c:141
+msgid "Surround 5.1"
+msgstr "Surround 5.1"
+
+#: ../gde2-volume-control/gvc-utils.c:152
+msgid "Surround 7.1"
+msgstr "Surround 7.1"

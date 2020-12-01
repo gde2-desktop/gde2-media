@@ -1,0 +1,11 @@
+These are the GDE2 media tools for GDE2:
+
+gde2-volume-control  - GDE2 volume control application and applet
+
+Refer to the following files for license information for each sub-component
+of gde2-media:
+
+gde2-volume-control  - COPYING
+documentation        - COPYING-DOCS
+
+GDE2-Media is a fork of GNOME-Media.

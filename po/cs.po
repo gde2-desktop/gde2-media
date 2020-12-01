@@ -1,0 +1,470 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# huskyviking <husky.viking@seznam.cz>, 2014
+# Lukas Novotny <lukasnov@cvs.gde2.org>, 2006
+# Martin Kříž <liberte.czech@gmail.com>, 2016
+# Michal Bukovjan <bukm@centrum.cz>, 2002
+# Miloslav Trmač <mitr@volny.cz>, 2003, 2004, 2005, 2006
+# Petr Kovar <pmkovar@gmail.com>, 2007, 2008, 2009, 2010
+# Petr Tomeš <ptomes@gmail.com>, 2006
+# Stanislav Brabec <utx@penguin.cz>, 2000, 2001
+# Stanislav Kučera <inactive+kacernator@transifex.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: GDE2 Desktop Environment\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-14 14:07+0300\n"
+"PO-Revision-Date: 2016-01-06 21:01+0000\n"
+"Last-Translator: Martin Kříž <liberte.czech@gmail.com>\n"
+"Language-Team: Czech (http://www.transifex.com/gde2/GDE2/language/cs/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: cs\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: ../data/gde2-volume-control.desktop.in.in.h:1
+msgid "Sound"
+msgstr "Zvuk"
+
+#: ../data/gde2-volume-control.desktop.in.in.h:2
+msgid "Change sound volume and sound events"
+msgstr "Změní hlasitost zvuku a přiřadí zvuky k událostem"
+
+#: ../data/gde2-volume-control-applet.desktop.in.h:1
+#: ../gde2-volume-control/dialog-main.c:245
+#: ../gde2-volume-control/gvc-channel-bar.c:500
+#: ../gde2-volume-control/gvc-speaker-test.c:461
+msgid "Volume Control"
+msgstr "Ovládání hlasitosti"
+
+#: ../data/gde2-volume-control-applet.desktop.in.h:2
+msgid "Show desktop volume control"
+msgstr "Zobrazí ovládání hlasitosti pracovního prostředí"
+
+#. Translators: This is the name of an audio file that sounds like the bark of
+#. a dog.
+#. You might want to translate it into the equivalent words of your language.
+#: ../data/sounds/gde2-sounds-default.xml.in.in.h:3
+msgid "Bark"
+msgstr "Štěkot"
+
+#. Translators: This is the name of an audio file that sounds like a water
+#. drip.
+#. You might want to translate it into the equivalent words of your language.
+#: ../data/sounds/gde2-sounds-default.xml.in.in.h:6
+msgid "Drip"
+msgstr "Kapání"
+
+#. Translators: This is the name of an audio file that sounds like tapping
+#. glass.
+#. You might want to translate it into the equivalent words of your language.
+#: ../data/sounds/gde2-sounds-default.xml.in.in.h:9
+msgid "Glass"
+msgstr "Sklo"
+
+#. Translators: This is the name of an audio file that sounds sort of like a
+#. submarine sonar ping.
+#. You might want to translate it into the equivalent words of your language.
+#: ../data/sounds/gde2-sounds-default.xml.in.in.h:12
+msgid "Sonar"
+msgstr "Sonar"
+
+#: ../gde2-volume-control/applet-main.c:45
+#: ../gde2-volume-control/dialog-main.c:187
+msgid "Version of this application"
+msgstr "Verze této aplikace"
+
+#: ../gde2-volume-control/applet-main.c:46
+#: ../gde2-volume-control/dialog-main.c:185
+msgid "Enable debug"
+msgstr "Zapnout ladění"
+
+#: ../gde2-volume-control/applet-main.c:55
+msgid " — GDE2 Volume Control Applet"
+msgstr " – applet ovládání hlasitosti GDE2"
+
+#: ../gde2-volume-control/dialog-main.c:138
+msgid "Sound system is not available"
+msgstr "Zvukový systém není dostupný"
+
+#: ../gde2-volume-control/dialog-main.c:160
+msgid "Waiting for sound system to respond"
+msgstr "Čekání na odpověď zvukového systému"
+
+#: ../gde2-volume-control/dialog-main.c:184
+msgid "Sound system backend"
+msgstr "Backend zvukového systému"
+
+#: ../gde2-volume-control/dialog-main.c:186
+msgid "Startup page"
+msgstr "Spouštěcí stránka"
+
+#: ../gde2-volume-control/dialog-main.c:196
+msgid " — GDE2 Volume Control"
+msgstr " – ovládání hlasitosti GDE2"
+
+#: ../gde2-volume-control/gvc-applet.c:322
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2028
+msgid "Input"
+msgstr "Vstup"
+
+#: ../gde2-volume-control/gvc-applet.c:323
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2130
+msgid "Output"
+msgstr "Výstup"
+
+#: ../gde2-volume-control/gvc-applet.c:326
+msgid "Microphone Volume"
+msgstr "Hlasitost mikrofonu"
+
+#: ../gde2-volume-control/gvc-applet.c:328
+msgid "Sound Output Volume"
+msgstr "Výstupní hlasitost zvuku"
+
+#: ../gde2-volume-control/gvc-applet.c:333
+msgid "GDE2 Volume Control Applet"
+msgstr "Zvukový řídící applet GDE2"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:158
+msgctxt "balance"
+msgid "Left"
+msgstr "Levý"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:159
+msgctxt "balance"
+msgid "Right"
+msgstr "Pravý"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:162
+msgctxt "balance"
+msgid "Rear"
+msgstr "Zadní"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:163
+msgctxt "balance"
+msgid "Front"
+msgstr "Přední"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:166
+msgctxt "balance"
+msgid "Minimum"
+msgstr "Minimum"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:167
+msgctxt "balance"
+msgid "Maximum"
+msgstr "Maximum"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:355
+msgid "_Balance:"
+msgstr "_Vyvážení:"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:358
+msgid "_Fade:"
+msgstr "_Prolínání:"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:361
+msgid "_Subwoofer:"
+msgstr "_Subwoofer:"
+
+#: ../gde2-volume-control/gvc-channel-bar.c:330
+msgctxt "volume"
+msgid "Unamplified"
+msgstr "Nezesílené"
+
+#: ../gde2-volume-control/gvc-channel-bar.c:343
+msgctxt "volume"
+msgid "100%"
+msgstr "100%"
+
+#. Mute button
+#: ../gde2-volume-control/gvc-channel-bar.c:1099
+msgid "Mute"
+msgstr "Ztlumit"
+
+#: ../gde2-volume-control/gvc-combo-box.c:257
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1617
+msgid "_Profile:"
+msgstr "_Profil:"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:355
+#: ../gde2-volume-control/gvc-mixer-dialog.c:504
+msgid "Co_nnector:"
+msgstr "Ko_nektor:"
+
+#. translators:
+#. * The device has been disabled
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1126
+msgid "Disabled"
+msgstr "Zakázáno"
+
+#. translators:
+#. * The number of sound outputs on a particular device
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1132
+#, c-format
+msgid "%u Output"
+msgid_plural "%u Outputs"
+msgstr[0] "%u výstup"
+msgstr[1] "%u výstupy"
+msgstr[2] "%u výstupů"
+
+#. translators:
+#. * The number of sound inputs on a particular device
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1141
+#, c-format
+msgid "%u Input"
+msgid_plural "%u Inputs"
+msgstr[0] "%u vstup"
+msgstr[1] "%u vstupy"
+msgstr[2] "%u vstupů"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1508
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1777
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:872
+msgid "Name"
+msgstr "Název"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1556
+#, c-format
+msgid "Speaker Testing for %s"
+msgstr "Testování reproduktorů %s"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1620
+msgid "Test Speakers"
+msgstr "Otestovat reproduktory"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1829
+msgid "Sound Effects"
+msgstr "Zvukové efekty"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1852
+msgid "_Alert volume: "
+msgstr "Hl_asitost upozornění: "
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1927
+msgid "_Output volume: "
+msgstr "_Výstupní hlasitost: "
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1974
+msgid "Hardware"
+msgstr "Hardware"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1979
+msgid "C_hoose a device to configure:"
+msgstr "Zařízení nastavíte je_ho vybráním:"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2006
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2162
+msgid "Settings for the selected device:"
+msgstr "Nastavení vybraného zařízení:"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2036
+msgid "_Input volume: "
+msgstr "Vstupní hlas_itost: "
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2070
+msgid "Input level:"
+msgstr "Vstupní úroveň:"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2099
+msgid "C_hoose a device for sound input:"
+msgstr "V_yberte zařízení zvukového vstupu:"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2135
+msgid "C_hoose a device for sound output:"
+msgstr "V_yberte zařízení zvukového výstupu:"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2196
+msgid "Applications"
+msgstr "Aplikace"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2201
+msgid "No application is currently playing or recording audio."
+msgstr "Žádná aplikace aktuálně nepřehrává nebo nezaznamenává zvuk."
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2388
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:736
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:748
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:760
+msgid "Sound Preferences"
+msgstr "Předvolby zvuku"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:324
+msgid "No sounds"
+msgstr "Bez zvuků"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:445
+msgid "Built-in"
+msgstr "Zabudované"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:632
+#: ../gde2-volume-control/sound-theme-file-utils.c:292
+msgid "Custom"
+msgstr "Vlastní"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:739
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:750
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:762
+msgid "Testing event sound"
+msgstr "Testují se zvuky událostí"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:848
+msgid "Default"
+msgstr "Výchozí"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:849
+msgid "From theme"
+msgstr "Z motivu"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:879
+msgid "Type"
+msgstr "Typ"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:1064
+msgid "Sound _theme:"
+msgstr "Mo_tiv zvuku:"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:1077
+msgid "C_hoose an alert sound:"
+msgstr "V_yberte zvuk upozornění:"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:1109
+msgid "Enable _window and button sounds"
+msgstr "P_ovolit zvuky oken a tlačítek"
+
+#: ../gde2-volume-control/gvc-speaker-test.c:262
+msgid "Stop"
+msgstr "Zastavit"
+
+#: ../gde2-volume-control/gvc-speaker-test.c:262
+#: ../gde2-volume-control/gvc-speaker-test.c:380
+msgid "Test"
+msgstr "Otestovat"
+
+#: ../gde2-volume-control/gvc-stream-status-icon.c:232
+#, c-format
+msgid "Failed to start Sound Preferences: %s"
+msgstr "Nezdařilo se spustit předvolby zvuku: %s"
+
+#: ../gde2-volume-control/gvc-stream-status-icon.c:267
+msgid "_Mute"
+msgstr "Z_tlumit"
+
+#: ../gde2-volume-control/gvc-stream-status-icon.c:278
+#: ../gde2-volume-control/gvc-stream-status-icon.c:280
+msgid "_Sound Preferences"
+msgstr "Př_edvolby zvuku"
+
+#: ../gde2-volume-control/gvc-stream-status-icon.c:475
+msgid "Muted"
+msgstr "Ztlumeno"
+
+#: ../gde2-volume-control/gvc-utils.c:59
+msgid "Unknown"
+msgstr "Neznámý"
+
+#. Speaker channel names
+#: ../gde2-volume-control/gvc-utils.c:61
+#: ../gde2-volume-control/gvc-utils.c:109
+msgid "Mono"
+msgstr "Mono"
+
+#: ../gde2-volume-control/gvc-utils.c:62
+msgid "Front Left"
+msgstr "přední levý"
+
+#: ../gde2-volume-control/gvc-utils.c:63
+msgid "Front Right"
+msgstr "pravý přední"
+
+#: ../gde2-volume-control/gvc-utils.c:64
+msgid "Front Center"
+msgstr "přední střední"
+
+#: ../gde2-volume-control/gvc-utils.c:65
+msgid "LFE"
+msgstr "LFE, subwoofer"
+
+#: ../gde2-volume-control/gvc-utils.c:66
+msgid "Rear Left"
+msgstr "zadní levý"
+
+#: ../gde2-volume-control/gvc-utils.c:67
+msgid "Rear Right"
+msgstr "zadní pravý"
+
+#: ../gde2-volume-control/gvc-utils.c:68
+msgid "Rear Center"
+msgstr "zadní střední"
+
+#: ../gde2-volume-control/gvc-utils.c:69
+msgid "Front Left of Center"
+msgstr "přední levý nebo prostřední"
+
+#: ../gde2-volume-control/gvc-utils.c:70
+msgid "Front Right of Center"
+msgstr "přední pravý nebo prostřední"
+
+#: ../gde2-volume-control/gvc-utils.c:71
+msgid "Side Left"
+msgstr "Postranní levý"
+
+#: ../gde2-volume-control/gvc-utils.c:72
+msgid "Side Right"
+msgstr "Postranní pravý"
+
+#: ../gde2-volume-control/gvc-utils.c:73
+msgid "Top Front Left"
+msgstr "Hlavní přední vlevo"
+
+#: ../gde2-volume-control/gvc-utils.c:74
+msgid "Top Front Right"
+msgstr "Hlavní přední vpravo"
+
+#: ../gde2-volume-control/gvc-utils.c:75
+msgid "Top Front Center"
+msgstr "Hlavní přední uprostřed"
+
+#: ../gde2-volume-control/gvc-utils.c:76
+msgid "Top Center"
+msgstr "Hlavní střed"
+
+#: ../gde2-volume-control/gvc-utils.c:77
+msgid "Top Rear Left"
+msgstr "Hlavní zadní vlevo"
+
+#: ../gde2-volume-control/gvc-utils.c:78
+msgid "Top Rear Right"
+msgstr "Hlavní zadní vpravo"
+
+#: ../gde2-volume-control/gvc-utils.c:79
+msgid "Top Rear Center"
+msgstr "Hlavní zadní uprostřed"
+
+#: ../gde2-volume-control/gvc-utils.c:114
+msgid "Stereo"
+msgstr "Stereo"
+
+#: ../gde2-volume-control/gvc-utils.c:121
+msgid "Surround 4.0"
+msgstr "Surround 4.0"
+
+#: ../gde2-volume-control/gvc-utils.c:129
+msgid "Surround 4.1"
+msgstr "Surround 4.1"
+
+#: ../gde2-volume-control/gvc-utils.c:131
+msgid "Surround 5.0"
+msgstr "Surround 5.0"
+
+#: ../gde2-volume-control/gvc-utils.c:141
+msgid "Surround 5.1"
+msgstr "Surround 5.1"
+
+#: ../gde2-volume-control/gvc-utils.c:152
+msgid "Surround 7.1"
+msgstr "Surround 7.1"

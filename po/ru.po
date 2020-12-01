@@ -1,0 +1,471 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Alexandre Prokoudine <alexandre.prokoudine@gmail.com>, 2009
+# Alexei Sorokin <sor.alexei@meowr.ru>, 2014
+# Andrew W. Nosenko <awn@bcs.zp.ua>, 2003
+# Дмитрий Михирев <bizdelnick@gmail.com>, 2015
+# Leonid Kanter <leon@asplinux.ru>, 2004, 2005, 2006
+# theirix <theirix@gmail.com>, 2015
+# Valery Inozemtsev <inozemtsev@gmail.com>, 2009
+# Yuri Kozlov <yuray@komyakino.ru>, 2010
+msgid ""
+msgstr ""
+"Project-Id-Version: GDE2 Desktop Environment\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-14 14:07+0300\n"
+"PO-Revision-Date: 2016-02-02 15:31+0000\n"
+"Last-Translator: theirix <theirix@gmail.com>\n"
+"Language-Team: Russian (http://www.transifex.com/gde2/GDE2/language/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: ../data/gde2-volume-control.desktop.in.in.h:1
+msgid "Sound"
+msgstr "Звук"
+
+#: ../data/gde2-volume-control.desktop.in.in.h:2
+msgid "Change sound volume and sound events"
+msgstr "Изменить громкость звука и связать звуки с событиями рабочего стола"
+
+#: ../data/gde2-volume-control-applet.desktop.in.h:1
+#: ../gde2-volume-control/dialog-main.c:245
+#: ../gde2-volume-control/gvc-channel-bar.c:500
+#: ../gde2-volume-control/gvc-speaker-test.c:461
+msgid "Volume Control"
+msgstr "Регулятор громкости"
+
+#: ../data/gde2-volume-control-applet.desktop.in.h:2
+msgid "Show desktop volume control"
+msgstr "Показать регулятор громкости"
+
+#. Translators: This is the name of an audio file that sounds like the bark of
+#. a dog.
+#. You might want to translate it into the equivalent words of your language.
+#: ../data/sounds/gde2-sounds-default.xml.in.in.h:3
+msgid "Bark"
+msgstr "Лай"
+
+#. Translators: This is the name of an audio file that sounds like a water
+#. drip.
+#. You might want to translate it into the equivalent words of your language.
+#: ../data/sounds/gde2-sounds-default.xml.in.in.h:6
+msgid "Drip"
+msgstr "Капанье воды"
+
+#. Translators: This is the name of an audio file that sounds like tapping
+#. glass.
+#. You might want to translate it into the equivalent words of your language.
+#: ../data/sounds/gde2-sounds-default.xml.in.in.h:9
+msgid "Glass"
+msgstr "Разбитое стекло"
+
+#. Translators: This is the name of an audio file that sounds sort of like a
+#. submarine sonar ping.
+#. You might want to translate it into the equivalent words of your language.
+#: ../data/sounds/gde2-sounds-default.xml.in.in.h:12
+msgid "Sonar"
+msgstr "Сонар"
+
+#: ../gde2-volume-control/applet-main.c:45
+#: ../gde2-volume-control/dialog-main.c:187
+msgid "Version of this application"
+msgstr "Версия этого приложения"
+
+#: ../gde2-volume-control/applet-main.c:46
+#: ../gde2-volume-control/dialog-main.c:185
+msgid "Enable debug"
+msgstr "Включить отладку"
+
+#: ../gde2-volume-control/applet-main.c:55
+msgid " — GDE2 Volume Control Applet"
+msgstr " — Апплет регулятора громкости GDE2"
+
+#: ../gde2-volume-control/dialog-main.c:138
+msgid "Sound system is not available"
+msgstr "Звуковая система недоступна"
+
+#: ../gde2-volume-control/dialog-main.c:160
+msgid "Waiting for sound system to respond"
+msgstr "Ожидание ответа звуковой подсистемы"
+
+#: ../gde2-volume-control/dialog-main.c:184
+msgid "Sound system backend"
+msgstr "Бэкэнд звуковой системы"
+
+#: ../gde2-volume-control/dialog-main.c:186
+msgid "Startup page"
+msgstr "Домашняя страница"
+
+#: ../gde2-volume-control/dialog-main.c:196
+msgid " — GDE2 Volume Control"
+msgstr " — Регулятор громкости GDE2"
+
+#: ../gde2-volume-control/gvc-applet.c:322
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2028
+msgid "Input"
+msgstr "Вход"
+
+#: ../gde2-volume-control/gvc-applet.c:323
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2130
+msgid "Output"
+msgstr "Выход"
+
+#: ../gde2-volume-control/gvc-applet.c:326
+msgid "Microphone Volume"
+msgstr "Громкость микрофона"
+
+#: ../gde2-volume-control/gvc-applet.c:328
+msgid "Sound Output Volume"
+msgstr "Громкость звука"
+
+#: ../gde2-volume-control/gvc-applet.c:333
+msgid "GDE2 Volume Control Applet"
+msgstr "Апплет регулятора громкости GDE2"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:158
+msgctxt "balance"
+msgid "Left"
+msgstr "Левый"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:159
+msgctxt "balance"
+msgid "Right"
+msgstr "Правый"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:162
+msgctxt "balance"
+msgid "Rear"
+msgstr "Задний"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:163
+msgctxt "balance"
+msgid "Front"
+msgstr "Передний"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:166
+msgctxt "balance"
+msgid "Minimum"
+msgstr "Минимум"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:167
+msgctxt "balance"
+msgid "Maximum"
+msgstr "Максимум"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:355
+msgid "_Balance:"
+msgstr "_Баланс"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:358
+msgid "_Fade:"
+msgstr "Затухание:"
+
+#: ../gde2-volume-control/gvc-balance-bar.c:361
+msgid "_Subwoofer:"
+msgstr "Сабвуфер"
+
+#: ../gde2-volume-control/gvc-channel-bar.c:330
+msgctxt "volume"
+msgid "Unamplified"
+msgstr " Неусиленный"
+
+#: ../gde2-volume-control/gvc-channel-bar.c:343
+msgctxt "volume"
+msgid "100%"
+msgstr "100%"
+
+#. Mute button
+#: ../gde2-volume-control/gvc-channel-bar.c:1099
+msgid "Mute"
+msgstr "Приглушить"
+
+#: ../gde2-volume-control/gvc-combo-box.c:257
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1617
+msgid "_Profile:"
+msgstr "_Профиль:"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:355
+#: ../gde2-volume-control/gvc-mixer-dialog.c:504
+msgid "Co_nnector:"
+msgstr "_Канал:"
+
+#. translators:
+#. * The device has been disabled
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1126
+msgid "Disabled"
+msgstr "Выключено"
+
+#. translators:
+#. * The number of sound outputs on a particular device
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1132
+#, c-format
+msgid "%u Output"
+msgid_plural "%u Outputs"
+msgstr[0] "%u выход"
+msgstr[1] "%u выхода"
+msgstr[2] "%u выходов"
+msgstr[3] "%u выходов"
+
+#. translators:
+#. * The number of sound inputs on a particular device
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1141
+#, c-format
+msgid "%u Input"
+msgid_plural "%u Inputs"
+msgstr[0] "%u вход"
+msgstr[1] "%u входа"
+msgstr[2] "%u входов"
+msgstr[3] "%u входов"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1508
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1777
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:872
+msgid "Name"
+msgstr "Название"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1556
+#, c-format
+msgid "Speaker Testing for %s"
+msgstr "Проверка динамиков для %s"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1620
+msgid "Test Speakers"
+msgstr "Проверить динамики"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1829
+msgid "Sound Effects"
+msgstr "Звуковые события"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1852
+msgid "_Alert volume: "
+msgstr "Громкость _уведомлений: "
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1927
+msgid "_Output volume: "
+msgstr "_Громкость звука: "
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1974
+msgid "Hardware"
+msgstr "Устройства"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:1979
+msgid "C_hoose a device to configure:"
+msgstr "_Выберите настраиваемое устройство:"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2006
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2162
+msgid "Settings for the selected device:"
+msgstr "Параметры выбранного устройства:"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2036
+msgid "_Input volume: "
+msgstr "Громкость _записи: "
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2070
+msgid "Input level:"
+msgstr "Уровень записи:"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2099
+msgid "C_hoose a device for sound input:"
+msgstr "Выберите устройство для записи звука:"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2135
+msgid "C_hoose a device for sound output:"
+msgstr "В_ыберите устройство для вывода звука:"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2196
+msgid "Applications"
+msgstr "Приложения"
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2201
+msgid "No application is currently playing or recording audio."
+msgstr "В настоящий момент приложения не проигрывают и не записывают звук."
+
+#: ../gde2-volume-control/gvc-mixer-dialog.c:2388
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:736
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:748
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:760
+msgid "Sound Preferences"
+msgstr "Параметры звука"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:324
+msgid "No sounds"
+msgstr "Без звуков"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:445
+msgid "Built-in"
+msgstr "Встроенная"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:632
+#: ../gde2-volume-control/sound-theme-file-utils.c:292
+msgid "Custom"
+msgstr "Другой"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:739
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:750
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:762
+msgid "Testing event sound"
+msgstr "Тестовый звуковой сигнал"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:848
+msgid "Default"
+msgstr "По умолчанию"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:849
+msgid "From theme"
+msgstr "Из темы"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:879
+msgid "Type"
+msgstr "Тип"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:1064
+msgid "Sound _theme:"
+msgstr "Тема звуков:"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:1077
+msgid "C_hoose an alert sound:"
+msgstr "Выберите звук уведомления:"
+
+#: ../gde2-volume-control/gvc-sound-theme-chooser.c:1109
+msgid "Enable _window and button sounds"
+msgstr "Включить звуковые уведомления о действиях с окнами и нажатии кнопок"
+
+#: ../gde2-volume-control/gvc-speaker-test.c:262
+msgid "Stop"
+msgstr "Остановить"
+
+#: ../gde2-volume-control/gvc-speaker-test.c:262
+#: ../gde2-volume-control/gvc-speaker-test.c:380
+msgid "Test"
+msgstr "Проверить"
+
+#: ../gde2-volume-control/gvc-stream-status-icon.c:232
+#, c-format
+msgid "Failed to start Sound Preferences: %s"
+msgstr "Не удалось запустить диалог настройки параметров звука: %s"
+
+#: ../gde2-volume-control/gvc-stream-status-icon.c:267
+msgid "_Mute"
+msgstr "_Приглушить"
+
+#: ../gde2-volume-control/gvc-stream-status-icon.c:278
+#: ../gde2-volume-control/gvc-stream-status-icon.c:280
+msgid "_Sound Preferences"
+msgstr "П_араметры звука"
+
+#: ../gde2-volume-control/gvc-stream-status-icon.c:475
+msgid "Muted"
+msgstr "Приглушён"
+
+#: ../gde2-volume-control/gvc-utils.c:59
+msgid "Unknown"
+msgstr "Неизвестный"
+
+#. Speaker channel names
+#: ../gde2-volume-control/gvc-utils.c:61
+#: ../gde2-volume-control/gvc-utils.c:109
+msgid "Mono"
+msgstr "Моно"
+
+#: ../gde2-volume-control/gvc-utils.c:62
+msgid "Front Left"
+msgstr "Передний левый"
+
+#: ../gde2-volume-control/gvc-utils.c:63
+msgid "Front Right"
+msgstr "Передний правый"
+
+#: ../gde2-volume-control/gvc-utils.c:64
+msgid "Front Center"
+msgstr "Фронтальный"
+
+#: ../gde2-volume-control/gvc-utils.c:65
+msgid "LFE"
+msgstr "Н/Ч"
+
+#: ../gde2-volume-control/gvc-utils.c:66
+msgid "Rear Left"
+msgstr "Задний левый"
+
+#: ../gde2-volume-control/gvc-utils.c:67
+msgid "Rear Right"
+msgstr "Задний правый"
+
+#: ../gde2-volume-control/gvc-utils.c:68
+msgid "Rear Center"
+msgstr "Задний центральный"
+
+#: ../gde2-volume-control/gvc-utils.c:69
+msgid "Front Left of Center"
+msgstr "Передний левый или центральный"
+
+#: ../gde2-volume-control/gvc-utils.c:70
+msgid "Front Right of Center"
+msgstr "Передний правый или центральный"
+
+#: ../gde2-volume-control/gvc-utils.c:71
+msgid "Side Left"
+msgstr "Боковой левый"
+
+#: ../gde2-volume-control/gvc-utils.c:72
+msgid "Side Right"
+msgstr "Боковой правый"
+
+#: ../gde2-volume-control/gvc-utils.c:73
+msgid "Top Front Left"
+msgstr "Верхний передний левый"
+
+#: ../gde2-volume-control/gvc-utils.c:74
+msgid "Top Front Right"
+msgstr "Верхний передний правый"
+
+#: ../gde2-volume-control/gvc-utils.c:75
+msgid "Top Front Center"
+msgstr "Верхний передний центральный"
+
+#: ../gde2-volume-control/gvc-utils.c:76
+msgid "Top Center"
+msgstr "Верхний центральный"
+
+#: ../gde2-volume-control/gvc-utils.c:77
+msgid "Top Rear Left"
+msgstr "Верхний задний левый"
+
+#: ../gde2-volume-control/gvc-utils.c:78
+msgid "Top Rear Right"
+msgstr "Верхний задний правый"
+
+#: ../gde2-volume-control/gvc-utils.c:79
+msgid "Top Rear Center"
+msgstr "Верхний задний центральный"
+
+#: ../gde2-volume-control/gvc-utils.c:114
+msgid "Stereo"
+msgstr "Стерео"
+
+#: ../gde2-volume-control/gvc-utils.c:121
+msgid "Surround 4.0"
+msgstr "Объёмный звук 4.0"
+
+#: ../gde2-volume-control/gvc-utils.c:129
+msgid "Surround 4.1"
+msgstr "Объёмный звук 4.1"
+
+#: ../gde2-volume-control/gvc-utils.c:131
+msgid "Surround 5.0"
+msgstr "Объёмный звук 5.0"
+
+#: ../gde2-volume-control/gvc-utils.c:141
+msgid "Surround 5.1"
+msgstr "Объёмный звук 5.1"
+
+#: ../gde2-volume-control/gvc-utils.c:152
+msgid "Surround 7.1"
+msgstr "Объёмный звук 7.1"

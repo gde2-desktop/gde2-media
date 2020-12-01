@@ -1,0 +1,15 @@
+[Desktop Entry]
+_Name=Sound
+_Comment=Change sound volume and sound events
+Exec=gde2-volume-control
+Icon=multimedia-volume-control
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=AudioVideo;Mixer;Settings;HardwareSettings;
+Keywords=GDE2;volume;control;mixer;settings;sound;events;
+OnlyShowIn=GDE2;
+X-GDE2-Bugzilla-Bugzilla=GDE2
+X-GDE2-Bugzilla-Product=gde2-media
+X-GDE2-Bugzilla-Component=gde2-volume-control
+X-GDE2-Bugzilla-Version=@VERSION@

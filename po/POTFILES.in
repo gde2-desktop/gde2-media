@@ -1,0 +1,18 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+[encoding: UTF-8]
+data/gde2-volume-control.desktop.in.in
+data/gde2-volume-control-applet.desktop.in
+data/sounds/gde2-sounds-default.xml.in.in
+gde2-volume-control/applet-main.c
+gde2-volume-control/dialog-main.c
+gde2-volume-control/gvc-applet.c
+gde2-volume-control/gvc-balance-bar.c
+gde2-volume-control/gvc-channel-bar.c
+gde2-volume-control/gvc-combo-box.c
+gde2-volume-control/gvc-mixer-dialog.c
+gde2-volume-control/gvc-sound-theme-chooser.c
+gde2-volume-control/gvc-speaker-test.c
+gde2-volume-control/gvc-stream-status-icon.c
+gde2-volume-control/gvc-utils.c
+gde2-volume-control/sound-theme-file-utils.c
