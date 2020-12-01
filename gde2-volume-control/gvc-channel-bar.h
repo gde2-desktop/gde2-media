@@ -26,7 +26,7 @@
 #include <glib-object.h>
 #include <gtk/gtk.h>
 
-#include <libgde2mixer/gde2mixer.h>
+#include <libmatemixer/matemixer.h>
 
 G_BEGIN_DECLS
 
@@ -56,11 +56,11 @@ struct _GvcChannelBarClass
 
 GType               gvc_channel_bar_get_type            (void);
 
-GtkWidget *         gvc_channel_bar_new                 (Gde2MixerStreamControl    *control);
+GtkWidget *         gvc_channel_bar_new                 (MateMixerStreamControl    *control);
 
-Gde2MixerStreamControl *gvc_channel_bar_get_control          (GvcChannelBar      *bar);
+MateMixerStreamControl *gvc_channel_bar_get_control          (GvcChannelBar      *bar);
 void                gvc_channel_bar_set_control          (GvcChannelBar      *bar,
-                                                         Gde2MixerStreamControl    *control);
+                                                         MateMixerStreamControl    *control);
 
 const gchar *       gvc_channel_bar_get_name            (GvcChannelBar      *bar);
 void                gvc_channel_bar_set_name            (GvcChannelBar      *bar,

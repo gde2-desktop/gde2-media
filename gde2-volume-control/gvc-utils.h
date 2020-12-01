@@ -23,13 +23,13 @@
 
 #include <glib.h>
 
-#include <libgde2mixer/gde2mixer.h>
+#include <libmatemixer/matemixer.h>
 
 G_BEGIN_DECLS
 
-const gchar *gvc_channel_position_to_pulse_string  (Gde2MixerChannelPosition position);
-const gchar *gvc_channel_position_to_pretty_string (Gde2MixerChannelPosition position);
-const gchar *gvc_channel_map_to_pretty_string      (Gde2MixerStreamControl  *control);
+const gchar *gvc_channel_position_to_pulse_string  (MateMixerChannelPosition position);
+const gchar *gvc_channel_position_to_pretty_string (MateMixerChannelPosition position);
+const gchar *gvc_channel_map_to_pretty_string      (MateMixerStreamControl  *control);
 
 G_END_DECLS
 

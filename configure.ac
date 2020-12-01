@@ -35,8 +35,8 @@ AC_TYPE_SIZE_T
 GLIB_REQUIRED_VERSION=2.36.0
 GIO_REQUIRED_VERSION=2.36.0
 CANBERRA_REQUIRED_VERSION=0.13
-GDE2_MIXER_REQUIRED_VERSION=1.9.1
-GDE2_DESKTOP_REQUIRED_VERSION=1.9.3
+MATE_MIXER_REQUIRED_VERSION=1.9.1
+GDE2_DESKTOP_REQUIRED_VERSION=1.1.0
 
 dnl=======================================================================
 dnl Support multiple GTK versions
@@ -79,7 +79,7 @@ PKG_CHECK_MODULES(VOLUME_CONTROL,
                   unique-$UNIQUE_API_VERSION
                   libxml-2.0
                   gde2-desktop-2.0 >= $GDE2_DESKTOP_REQUIRED_VERSION
-                  libgde2mixer >= $GDE2_MIXER_REQUIRED_VERSION
+                  libmatemixer >= $MATE_MIXER_REQUIRED_VERSION
 )
 AC_SUBST(VOLUME_CONTROL_CFLAGS)
 AC_SUBST(VOLUME_CONTROL_LIBS)

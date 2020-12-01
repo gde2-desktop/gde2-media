@@ -24,7 +24,7 @@
 #include <gtk/gtk.h>
 #include <gdk/gdkkeysyms.h>
 
-#include <libgde2mixer/gde2mixer.h>
+#include <libmatemixer/matemixer.h>
 
 #define GDE2_DESKTOP_USE_UNSTABLE_API
 #include <libgde2-desktop/gde2-desktop-utils.h>
@@ -41,7 +41,7 @@ struct _GvcStreamStatusIconPrivate
         GtkWidget       *bar;
         guint            current_icon;
         gchar           *display_name;
-        Gde2MixerStreamControl *control;
+        MateMixerStreamControl *control;
 };
 
 enum
@@ -194,9 +194,9 @@ on_status_icon_button_press (GtkStatusIcon       *status_icon,
 {
         /* Middle click acts as mute/unmute */
         if (event->button == 2) {
-                gboolean is_muted = gde2_mixer_stream_control_get_mute (icon->priv->control);
+                gboolean is_muted = mate_mixer_stream_control_get_mute (icon->priv->control);
 
-                gde2_mixer_stream_control_set_mute (icon->priv->control, !is_muted);
+                mate_mixer_stream_control_set_mute (icon->priv->control, !is_muted);
                 return TRUE;
         }
         return FALSE;
@@ -209,7 +209,7 @@ on_menu_mute_toggled (GtkMenuItem *item, GvcStreamStatusIcon *icon)
 
         is_muted = gtk_check_menu_item_get_active (GTK_CHECK_MENU_ITEM (item));
 
-        gde2_mixer_stream_control_set_mute (icon->priv->control, is_muted);
+        mate_mixer_stream_control_set_mute (icon->priv->control, is_muted);
 }
 
 static void
@@ -266,7 +266,7 @@ on_status_icon_popup_menu (GtkStatusIcon       *status_icon,
 #endif
         item = gtk_check_menu_item_new_with_mnemonic (_("_Mute"));
         gtk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (item),
-                                        gde2_mixer_stream_control_get_mute (icon->priv->control));
+                                        mate_mixer_stream_control_get_mute (icon->priv->control));
         g_signal_connect (G_OBJECT (item),
                           "toggled",
                           G_CALLBACK (on_menu_mute_toggled),
@@ -431,7 +431,7 @@ update_icon (GvcStreamStatusIcon *icon)
         guint                n = 0;
         gchar               *markup;
         const gchar         *description;
-        Gde2MixerStreamControlFlags flags;
+        MateMixerStreamControlFlags flags;
 
         if (icon->priv->control == NULL) {
                 /* Do not bother creating a tooltip for an unusable icon as it
@@ -441,14 +441,14 @@ update_icon (GvcStreamStatusIcon *icon)
         } else
                 gtk_status_icon_set_has_tooltip (GTK_STATUS_ICON (icon), TRUE);
 
-        flags = gde2_mixer_stream_control_get_flags (icon->priv->control);
+        flags = mate_mixer_stream_control_get_flags (icon->priv->control);
 
-        if (flags & GDE2_MIXER_STREAM_CONTROL_MUTE_READABLE)
-                muted = gde2_mixer_stream_control_get_mute (icon->priv->control);
+        if (flags & MATE_MIXER_STREAM_CONTROL_MUTE_READABLE)
+                muted = mate_mixer_stream_control_get_mute (icon->priv->control);
 
-        if (flags & GDE2_MIXER_STREAM_CONTROL_VOLUME_READABLE) {
-                volume = gde2_mixer_stream_control_get_volume (icon->priv->control);
-                normal = gde2_mixer_stream_control_get_normal_volume (icon->priv->control);
+        if (flags & MATE_MIXER_STREAM_CONTROL_VOLUME_READABLE) {
+                volume = mate_mixer_stream_control_get_volume (icon->priv->control);
+                normal = mate_mixer_stream_control_get_normal_volume (icon->priv->control);
 
                 /* Select an icon, they are expected to be sorted, the lowest index being
                  * the mute icon and the rest being volume increments */
@@ -457,8 +457,8 @@ update_icon (GvcStreamStatusIcon *icon)
                 else
                         n = CLAMP (3 * volume / normal + 1, 1, 3);
         }
-        if (flags & GDE2_MIXER_STREAM_CONTROL_HAS_DECIBEL)
-                decibel = gde2_mixer_stream_control_get_decibel (icon->priv->control);
+        if (flags & MATE_MIXER_STREAM_CONTROL_HAS_DECIBEL)
+                decibel = mate_mixer_stream_control_get_decibel (icon->priv->control);
 
         /* Apparently status icon will reset icon even if it doesn't change */
         if (icon->priv->current_icon != n) {
@@ -467,18 +467,18 @@ update_icon (GvcStreamStatusIcon *icon)
                 icon->priv->current_icon = n;
         }
 
-        description = gde2_mixer_stream_control_get_label (icon->priv->control);
+        description = mate_mixer_stream_control_get_label (icon->priv->control);
 
         if (muted) {
                 markup = g_strdup_printf ("<b>%s: %s</b>\n<small>%s</small>",
                                           icon->priv->display_name,
                                           _("Muted"),
                                           description);
-        } else if (flags & GDE2_MIXER_STREAM_CONTROL_VOLUME_READABLE) {
+        } else if (flags & MATE_MIXER_STREAM_CONTROL_VOLUME_READABLE) {
                 gdouble display_volume = 100 * volume / normal;
 
-                if (flags & GDE2_MIXER_STREAM_CONTROL_HAS_DECIBEL) {
-                        if (decibel > -GDE2_MIXER_INFINITY) {
+                if (flags & MATE_MIXER_STREAM_CONTROL_HAS_DECIBEL) {
+                        if (decibel > -MATE_MIXER_INFINITY) {
                                 markup = g_strdup_printf ("<b>%s: %.0f%%</b>\n"
                                                           "<small>%0.2f dB\n%s</small>",
                                                           icon->priv->display_name,
@@ -534,7 +534,7 @@ gvc_stream_status_icon_set_icon_names (GvcStreamStatusIcon  *icon,
 }
 
 static void
-on_stream_control_volume_notify (Gde2MixerStreamControl     *control,
+on_stream_control_volume_notify (MateMixerStreamControl     *control,
                          GParamSpec          *pspec,
                          GvcStreamStatusIcon *icon)
 {
@@ -542,7 +542,7 @@ on_stream_control_volume_notify (Gde2MixerStreamControl     *control,
 }
 
 static void
-on_stream_control_mute_notify (Gde2MixerStreamControl     *control,
+on_stream_control_mute_notify (MateMixerStreamControl     *control,
                        GParamSpec          *pspec,
                        GvcStreamStatusIcon *icon)
 {
@@ -565,7 +565,7 @@ gvc_stream_status_icon_set_display_name (GvcStreamStatusIcon *icon,
 
 void
 gvc_stream_status_icon_set_control (GvcStreamStatusIcon    *icon,
-                                    Gde2MixerStreamControl *control)
+                                    MateMixerStreamControl *control)
 {
         g_return_if_fail (GVC_STREAM_STATUS_ICON (icon));
 
@@ -683,8 +683,8 @@ gvc_stream_status_icon_class_init (GvcStreamStatusIconClass *klass)
         properties[PROP_CONTROL] =
                 g_param_spec_object ("control",
                                      "Control",
-                                     "Gde2Mixer stream control",
-                                     GDE2_MIXER_TYPE_STREAM_CONTROL,
+                                     "MateMixer stream control",
+                                     MATE_MIXER_TYPE_STREAM_CONTROL,
                                      G_PARAM_READWRITE |
                                      G_PARAM_CONSTRUCT |
                                      G_PARAM_STATIC_STRINGS);
@@ -820,7 +820,7 @@ gvc_stream_status_icon_finalize (GObject *object)
 }
 
 GvcStreamStatusIcon *
-gvc_stream_status_icon_new (Gde2MixerStreamControl *control,
+gvc_stream_status_icon_new (MateMixerStreamControl *control,
                             const gchar           **icon_names)
 {
         return g_object_new (GVC_TYPE_STREAM_STATUS_ICON,

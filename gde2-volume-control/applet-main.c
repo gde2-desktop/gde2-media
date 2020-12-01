@@ -28,7 +28,7 @@
 
 #include <libintl.h>
 #include <unique/uniqueapp.h>
-#include <libgde2mixer/gde2mixer.h>
+#include <libmatemixer/matemixer.h>
 
 #include "gvc-applet.h"
 
@@ -74,8 +74,8 @@ main (int argc, char **argv)
                 g_warning ("Applet is already running, exiting");
                 return 0;
         }
-        if (gde2_mixer_init () == FALSE) {
-                g_warning ("libgde2mixer initialization failed, exiting");
+        if (mate_mixer_init () == FALSE) {
+                g_warning ("libmatemixer initialization failed, exiting");
                 return 1;
         }
 

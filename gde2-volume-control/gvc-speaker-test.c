@@ -27,7 +27,7 @@
 #include <gtk/gtk.h>
 
 #include <canberra.h>
-#include <libgde2mixer/gde2mixer.h>
+#include <libmatemixer/matemixer.h>
 
 #include "gvc-speaker-test.h"
 #include "gvc-utils.h"
@@ -38,7 +38,7 @@ struct _GvcSpeakerTestPrivate
 {
         GArray           *controls;
         ca_context       *canberra;
-        Gde2MixerStream  *stream;
+        MateMixerStream  *stream;
 };
 
 enum {
@@ -61,28 +61,28 @@ G_DEFINE_TYPE (GvcSpeakerTest, gvc_speaker_test, GTK_TYPE_TABLE)
 #endif
 
 typedef struct {
-        Gde2MixerChannelPosition position;
+        MateMixerChannelPosition position;
         guint left;
         guint top;
 } TablePosition;
 
 static const TablePosition positions[] = {
         /* Position, X, Y */
-        { GDE2_MIXER_CHANNEL_FRONT_LEFT, 0, 0, },
-        { GDE2_MIXER_CHANNEL_FRONT_LEFT_CENTER, 1, 0, },
-        { GDE2_MIXER_CHANNEL_FRONT_CENTER, 2, 0, },
-        { GDE2_MIXER_CHANNEL_MONO, 2, 0, },
-        { GDE2_MIXER_CHANNEL_FRONT_RIGHT_CENTER, 3, 0, },
-        { GDE2_MIXER_CHANNEL_FRONT_RIGHT, 4, 0, },
-        { GDE2_MIXER_CHANNEL_SIDE_LEFT, 0, 1, },
-        { GDE2_MIXER_CHANNEL_SIDE_RIGHT, 4, 1, },
-        { GDE2_MIXER_CHANNEL_BACK_LEFT, 0, 2, },
-        { GDE2_MIXER_CHANNEL_BACK_CENTER, 2, 2, },
-        { GDE2_MIXER_CHANNEL_BACK_RIGHT, 4, 2, },
-        { GDE2_MIXER_CHANNEL_LFE, 3, 2 }
+        { MATE_MIXER_CHANNEL_FRONT_LEFT, 0, 0, },
+        { MATE_MIXER_CHANNEL_FRONT_LEFT_CENTER, 1, 0, },
+        { MATE_MIXER_CHANNEL_FRONT_CENTER, 2, 0, },
+        { MATE_MIXER_CHANNEL_MONO, 2, 0, },
+        { MATE_MIXER_CHANNEL_FRONT_RIGHT_CENTER, 3, 0, },
+        { MATE_MIXER_CHANNEL_FRONT_RIGHT, 4, 0, },
+        { MATE_MIXER_CHANNEL_SIDE_LEFT, 0, 1, },
+        { MATE_MIXER_CHANNEL_SIDE_RIGHT, 4, 1, },
+        { MATE_MIXER_CHANNEL_BACK_LEFT, 0, 2, },
+        { MATE_MIXER_CHANNEL_BACK_CENTER, 2, 2, },
+        { MATE_MIXER_CHANNEL_BACK_RIGHT, 4, 2, },
+        { MATE_MIXER_CHANNEL_LFE, 3, 2 }
 };
 
-Gde2MixerStream *
+MateMixerStream *
 gvc_speaker_test_get_stream (GvcSpeakerTest *test)
 {
         g_return_val_if_fail (GVC_IS_SPEAKER_TEST (test), NULL);
@@ -91,20 +91,20 @@ gvc_speaker_test_get_stream (GvcSpeakerTest *test)
 }
 
 static void
-gvc_speaker_test_set_stream (GvcSpeakerTest *test, Gde2MixerStream *stream)
+gvc_speaker_test_set_stream (GvcSpeakerTest *test, MateMixerStream *stream)
 {
-        Gde2MixerStreamControl *control;
+        MateMixerStreamControl *control;
         const gchar            *name;
         guint                   i;
 
-        name = gde2_mixer_stream_get_name (stream);
-        control = gde2_mixer_stream_get_default_control (stream);
+        name = mate_mixer_stream_get_name (stream);
+        control = mate_mixer_stream_get_default_control (stream);
 
         ca_context_change_device (test->priv->canberra, name);
 
         for (i = 0; i < G_N_ELEMENTS (positions); i++) {
                 gboolean has_position =
-                        gde2_mixer_stream_control_has_channel_position (control, positions[i].position);
+                        mate_mixer_stream_control_has_channel_position (control, positions[i].position);
 
                 gtk_widget_set_visible (g_array_index (test->priv->controls, GtkWidget *, i),
                                         has_position);
@@ -162,8 +162,8 @@ gvc_speaker_test_class_init (GvcSpeakerTestClass *klass)
         properties[PROP_STREAM] =
                 g_param_spec_object ("stream",
                                      "Stream",
-                                     "Gde2Mixer stream",
-                                     GDE2_MIXER_TYPE_STREAM,
+                                     "MateMixer stream",
+                                     MATE_MIXER_TYPE_STREAM,
                                      G_PARAM_READWRITE |
                                      G_PARAM_CONSTRUCT_ONLY |
                                      G_PARAM_STATIC_STRINGS);
@@ -174,26 +174,26 @@ gvc_speaker_test_class_init (GvcSpeakerTestClass *klass)
 }
 
 static const gchar *
-sound_name (Gde2MixerChannelPosition position)
+sound_name (MateMixerChannelPosition position)
 {
         switch (position) {
-        case GDE2_MIXER_CHANNEL_FRONT_LEFT:
+        case MATE_MIXER_CHANNEL_FRONT_LEFT:
                 return "audio-channel-front-left";
-        case GDE2_MIXER_CHANNEL_FRONT_RIGHT:
+        case MATE_MIXER_CHANNEL_FRONT_RIGHT:
                 return "audio-channel-front-right";
-        case GDE2_MIXER_CHANNEL_FRONT_CENTER:
+        case MATE_MIXER_CHANNEL_FRONT_CENTER:
                 return "audio-channel-front-center";
-        case GDE2_MIXER_CHANNEL_BACK_LEFT:
+        case MATE_MIXER_CHANNEL_BACK_LEFT:
                 return "audio-channel-rear-left";
-        case GDE2_MIXER_CHANNEL_BACK_RIGHT:
+        case MATE_MIXER_CHANNEL_BACK_RIGHT:
                 return "audio-channel-rear-right";
-        case GDE2_MIXER_CHANNEL_BACK_CENTER:
+        case MATE_MIXER_CHANNEL_BACK_CENTER:
                 return "audio-channel-rear-center";
-        case GDE2_MIXER_CHANNEL_LFE:
+        case MATE_MIXER_CHANNEL_LFE:
                 return "audio-channel-lfe";
-        case GDE2_MIXER_CHANNEL_SIDE_LEFT:
+        case MATE_MIXER_CHANNEL_SIDE_LEFT:
                 return "audio-channel-side-left";
-        case GDE2_MIXER_CHANNEL_SIDE_RIGHT:
+        case MATE_MIXER_CHANNEL_SIDE_RIGHT:
                 return "audio-channel-side-right";
         default:
                 return NULL;
@@ -201,42 +201,42 @@ sound_name (Gde2MixerChannelPosition position)
 }
 
 static const gchar *
-icon_name (Gde2MixerChannelPosition position, gboolean playing)
+icon_name (MateMixerChannelPosition position, gboolean playing)
 {
         switch (position) {
-        case GDE2_MIXER_CHANNEL_FRONT_LEFT:
+        case MATE_MIXER_CHANNEL_FRONT_LEFT:
                 return playing
                         ? "audio-speaker-left-testing"
                         : "audio-speaker-left";
-        case GDE2_MIXER_CHANNEL_FRONT_RIGHT:
+        case MATE_MIXER_CHANNEL_FRONT_RIGHT:
                 return playing
                         ? "audio-speaker-right-testing"
                         : "audio-speaker-right";
-        case GDE2_MIXER_CHANNEL_FRONT_CENTER:
+        case MATE_MIXER_CHANNEL_FRONT_CENTER:
                 return playing
                         ? "audio-speaker-center-testing"
                         : "audio-speaker-center";
-        case GDE2_MIXER_CHANNEL_BACK_LEFT:
+        case MATE_MIXER_CHANNEL_BACK_LEFT:
                 return playing
                         ? "audio-speaker-left-back-testing"
                         : "audio-speaker-left-back";
-        case GDE2_MIXER_CHANNEL_BACK_RIGHT:
+        case MATE_MIXER_CHANNEL_BACK_RIGHT:
                 return playing
                         ? "audio-speaker-right-back-testing"
                         : "audio-speaker-right-back";
-        case GDE2_MIXER_CHANNEL_BACK_CENTER:
+        case MATE_MIXER_CHANNEL_BACK_CENTER:
                 return playing
                         ? "audio-speaker-center-back-testing"
                         : "audio-speaker-center-back";
-        case GDE2_MIXER_CHANNEL_LFE:
+        case MATE_MIXER_CHANNEL_LFE:
                 return playing
                         ? "audio-subwoofer-testing"
                         : "audio-subwoofer";
-        case GDE2_MIXER_CHANNEL_SIDE_LEFT:
+        case MATE_MIXER_CHANNEL_SIDE_LEFT:
                 return playing
                         ? "audio-speaker-left-side-testing"
                         : "audio-speaker-left-side";
-        case GDE2_MIXER_CHANNEL_SIDE_RIGHT:
+        case MATE_MIXER_CHANNEL_SIDE_RIGHT:
                 return playing
                         ? "audio-speaker-right-side-testing"
                         : "audio-speaker-right-side";
@@ -251,7 +251,7 @@ update_button (GtkWidget *control)
         GtkWidget *button;
         GtkWidget *image;
         gboolean   playing;
-        Gde2MixerChannelPosition position;
+        MateMixerChannelPosition position;
 
         button = g_object_get_data (G_OBJECT (control), "button");
         image  = g_object_get_data (G_OBJECT (control), "image");
@@ -305,7 +305,7 @@ on_test_button_clicked (GtkButton *button, GtkWidget *control)
         if (playing) {
                 g_object_set_data (G_OBJECT (control), "playing", GINT_TO_POINTER (FALSE));
         } else {
-                Gde2MixerChannelPosition position;
+                MateMixerChannelPosition position;
                 const gchar *name;
                 ca_proplist *proplist;
 
@@ -346,7 +346,7 @@ on_test_button_clicked (GtkButton *button, GtkWidget *control)
 }
 
 static GtkWidget *
-create_control (ca_context *canberra, Gde2MixerChannelPosition position)
+create_control (ca_context *canberra, MateMixerChannelPosition position)
 {
         GtkWidget   *control;
         GtkWidget   *box;
@@ -493,11 +493,11 @@ gvc_speaker_test_finalize (GObject *object)
 }
 
 GtkWidget *
-gvc_speaker_test_new (Gde2MixerStream *stream)
+gvc_speaker_test_new (MateMixerStream *stream)
 {
         GObject *test;
 
-        g_return_val_if_fail (GDE2_MIXER_IS_STREAM (stream), NULL);
+        g_return_val_if_fail (MATE_MIXER_IS_STREAM (stream), NULL);
 
         test = g_object_new (GVC_TYPE_SPEAKER_TEST,
                              "row-spacing", 6,

@@ -43,7 +43,7 @@ Version 1.10.0
 
 - Removed PulseAudio dependency
 - Removed gst-mixer and gst-mixer-applet
-- gde2-volume-control: Port from PulseAudio to libgde2mixer
+- gde2-volume-control: Port from PulseAudio to libmatemixer
 - gde2-volume-control: Allow selecting input and output connectors
 - gde2-volume-control: Speaker test widget now contains a Close button
 - gde2-volume-control: Device and stream lists are now sorted

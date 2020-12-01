@@ -27,7 +27,7 @@
 
 #include <libintl.h>
 #include <unique/uniqueapp.h>
-#include <libgde2mixer/gde2mixer.h>
+#include <libmatemixer/matemixer.h>
 
 #include "gvc-mixer-dialog.h"
 
@@ -87,7 +87,7 @@ remove_warning_dialog (void)
 }
 
 static void
-context_ready (Gde2MixerContext *context, UniqueApp *app)
+context_ready (MateMixerContext *context, UniqueApp *app)
 {
 	/* The dialog might be already created, e.g. when reconnected
 	 * to a sound server */
@@ -116,17 +116,17 @@ context_ready (Gde2MixerContext *context, UniqueApp *app)
 }
 
 static void
-on_context_state_notify (Gde2MixerContext *context,
+on_context_state_notify (MateMixerContext *context,
                          GParamSpec       *pspec,
                          UniqueApp        *app)
 {
-        Gde2MixerState state = gde2_mixer_context_get_state (context);
+        MateMixerState state = mate_mixer_context_get_state (context);
 
-        if (state == GDE2_MIXER_STATE_READY) {
+        if (state == MATE_MIXER_STATE_READY) {
                 remove_warning_dialog ();
                 context_ready (context, app);
         }
-        else if (state == GDE2_MIXER_STATE_FAILED) {
+        else if (state == MATE_MIXER_STATE_FAILED) {
                 GtkWidget *dialog;
 
                 remove_warning_dialog ();
@@ -178,7 +178,7 @@ main (int argc, char **argv)
 {
         GError           *error = NULL;
         gchar            *backend = NULL;
-        Gde2MixerContext *context;
+        MateMixerContext *context;
         UniqueApp        *app;
         GOptionEntry      entries[] = {
                 { "backend", 'b', 0, G_OPTION_ARG_STRING, &backend, N_("Sound system backend"), "pulse|alsa|oss|null" },
@@ -215,22 +215,22 @@ main (int argc, char **argv)
                 unique_app_send_message (app, UNIQUE_ACTIVATE, NULL);
                 return 0;
         }
-        if (gde2_mixer_init () == FALSE) {
-                g_warning ("libgde2mixer initialization failed, exiting");
+        if (mate_mixer_init () == FALSE) {
+                g_warning ("libmatemixer initialization failed, exiting");
                 return 1;
         }
 
-        context = gde2_mixer_context_new ();
+        context = mate_mixer_context_new ();
 
         if (backend != NULL) {
                 if (strcmp (backend, "pulse") == 0)
-                        gde2_mixer_context_set_backend_type (context, GDE2_MIXER_BACKEND_PULSEAUDIO);
+                        mate_mixer_context_set_backend_type (context, MATE_MIXER_BACKEND_PULSEAUDIO);
                 else if (strcmp (backend, "alsa") == 0)
-                        gde2_mixer_context_set_backend_type (context, GDE2_MIXER_BACKEND_ALSA);
+                        mate_mixer_context_set_backend_type (context, MATE_MIXER_BACKEND_ALSA);
                 else if (strcmp (backend, "oss") == 0)
-                        gde2_mixer_context_set_backend_type (context, GDE2_MIXER_BACKEND_OSS);
+                        mate_mixer_context_set_backend_type (context, MATE_MIXER_BACKEND_OSS);
                 else if (strcmp (backend, "null") == 0)
-                        gde2_mixer_context_set_backend_type (context, GDE2_MIXER_BACKEND_NULL);
+                        mate_mixer_context_set_backend_type (context, MATE_MIXER_BACKEND_NULL);
                 else {
                         g_warning ("Invalid backend: %s", backend);
                         g_object_unref (context);
@@ -242,19 +242,19 @@ main (int argc, char **argv)
                 g_free (backend);
         }
 
-        gde2_mixer_context_set_app_name (context, _("Volume Control"));
-        gde2_mixer_context_set_app_id (context, GVC_DIALOG_DBUS_NAME);
-        gde2_mixer_context_set_app_version (context, VERSION);
-        gde2_mixer_context_set_app_icon (context, "multimedia-volume-control");
+        mate_mixer_context_set_app_name (context, _("Volume Control"));
+        mate_mixer_context_set_app_id (context, GVC_DIALOG_DBUS_NAME);
+        mate_mixer_context_set_app_version (context, VERSION);
+        mate_mixer_context_set_app_icon (context, "multimedia-volume-control");
 
         g_signal_connect (G_OBJECT (context),
                           "notify::state",
                           G_CALLBACK (on_context_state_notify),
                           app);
 
-        gde2_mixer_context_open (context);
+        mate_mixer_context_open (context);
 
-        if (gde2_mixer_context_get_state (context) == GDE2_MIXER_STATE_CONNECTING) {
+        if (mate_mixer_context_get_state (context) == MATE_MIXER_STATE_CONNECTING) {
 		   popup_id = g_timeout_add_seconds (DIALOG_POPUP_TIMEOUT,
                                                  dialog_popup_timeout,
                                                  NULL);
